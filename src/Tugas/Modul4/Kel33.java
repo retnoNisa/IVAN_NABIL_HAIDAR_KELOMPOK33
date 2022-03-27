@@ -18,10 +18,15 @@ public class Kel33 {
         }return "Anda membeli " + hasil_akhir + " terima kasih telah membeli";
     }
         public static void main (String[] args){
+            int batasBeli = 3;
+        while(batasBeli>0) {
             menu awalan = new menu();
             awalan.Selamat_datang();
             Scanner input = new Scanner(System.in);
             int pilihan = input.nextInt();
             System.out.println(swit(pilihan));
+        batasBeli--;
+        }
+        System.out.println("Transaksi pembelian telah berakhir");
         }
     }
